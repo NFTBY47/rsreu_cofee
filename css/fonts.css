@@ -1,0 +1,103 @@
+/* Fonts.css - Подключение шрифтов через @import с fallback */
+
+/* Импорт шрифтов из Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Базовые настройки шрифтов с fallback */
+:root {
+    /* Основные шрифтовые пары */
+    --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    
+    /* Fallback шрифты на случай если Google Fonts не загрузятся */
+    --font-heading-fallback: Georgia, 'Times New Roman', serif;
+    --font-body-fallback: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Применение шрифтов с проверкой */
+body {
+    font-family: var(--font-body);
+    /* Fallback если шрифт не загрузился */
+    font-family: var(--font-body-fallback);
+}
+
+/* Для элементов, где важен шрифт заголовков */
+h1, h2, h3, h4, h5, h6,
+.hero-title,
+.section-title,
+.page-header h1,
+.logo {
+    font-family: var(--font-heading);
+    /* Fallback если шрифт не загрузился */
+    font-family: var(--font-heading-fallback);
+    font-weight: 600;
+}
+
+/* Специфичные настройки для разных элементов */
+
+/* Заголовки */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* Основной текст */
+body {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Навигация */
+.nav-link {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* Кнопки */
+.btn {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Адаптивные настройки шрифтов */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+    
+    body {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}

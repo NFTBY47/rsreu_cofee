@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лавандовая ветвь - Уютная кофейня с прованским шармом</title>
+    <meta name="description" content="Кофейня 'Лавандовая ветвь' - место, где аромат свежего кофе встречается с нотками прованской лаванды">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🌿</span>
+                    <span class="logo-text">Лавандовая ветвь</span>
+                </a>
+                
+                <!-- Гамбургер меню -->
+                <div class="menu-container">
+                    <button class="hamburger-menu" id="hamburgerMenu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    
+                    <div class="nav-overlay" id="navOverlay"></div>
+                    
+                    <div class="nav-menu" id="navMenu">
+                        <div class="nav-header">
+                            <span class="nav-title">Меню</span>
+                            <button class="nav-close" id="navClose">×</button>
+                        </div>
+                        
+                        <ul class="nav-links">
+                            <li><a href="index.html" class="nav-link active">🏠 Главная</a></li>
+                            <li><a href="menu.html" class="nav-link">☕ Меню</a></li>
+                            <li><a href="gallery.html" class="nav-link">🖼️ Галерея</a></li>
+                            <li><a href="contacts.html" class="nav-link">📞 Контакты</a></li>
+                            <li><a href="registration.html" class="nav-link">📝 Заказ</a></li>
+                            <li><a href="student.html" class="nav-link">👨‍🎓 Студент</a></li>
+                        </ul>
+                        
+                        <div class="nav-footer">
+                            <div class="contact-info-mobile">
+                                <p>📞 +7 (4912) 123-45-67</p>
+                                <p>🕒 Пн-Пт: 8:00-22:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Создано с любовью к лаванде</h1>
+                <p class="hero-subtitle">Откройте для себя волшебство французской провинции в центре города</p>
+                <div class="hero-buttons">
+                    <a href="menu.html" class="btn btn-primary">Наше меню</a>
+                    <a href="registration.html" class="btn btn-secondary">Сделать заказ</a>
+                </div>
+            </div>
+        </div>
+        <!-- Стрелочка для скролла -->
+        <div class="scroll-indicator" id="scrollIndicator">
+            <div class="scroll-arrow" onclick="scrollToAbout()"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Наша история</h2>
+                <p class="section-subtitle">Вдохновленные провансом, созданные с любовью</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Вдохновленные книгой</h3>
+                    <p>Вдохновленная бестселлером Хелены Хейл "Лавандовая ветвь", наша кофейня родилась из любви к трем вещам: ароматному кофе, прованской лаванде и уютным историям.</p>
+                    <p>Прочитав книгу в дождливый вечер, мы создали место, где:</p>
+                    <ul class="about-list">
+                        <li>Каждая чашка кофе рассказывает свою историю</li>
+                        <li>Аромат лаванды смешивается с запахом свежей выпечки</li>
+                        <li>Гости чувствуют себя как в старинном французском доме</li>
+                        <li>Каждый уголок пропитан теплом и уютом</li>
+                    </ul>
+                    <p>Сегодня "Лавандовая ветвь" - это не просто кофейня, а место встреч для тех, кто ценит медленную жизнь, творческие беседы и маленькие радости.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/interior-main.jpg" alt="Интерьер кофейни Лавандовая ветвь" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview -->
+    <section class="menu-preview section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Популярные позиции</h2>
+                <p class="section-subtitle">Попробуйте наши бестселлеры</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/menu-coffee.jpg" alt="Лавандовый раф" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Лавандовый раф</h4>
+                        <p>Нежный раф с экстрактом лаванды и ванильным сиропом</p>
+                        <span class="price">350 ₽</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/menu-dessert.jpg" alt="Чизкейк с гранатом" loading="lazy">
+                    </div>
+                    <div class="menu-item-content">
+                        <h4>Чизкейк с гранатом</h4>
+                        <p>Нежный чизкейк с ягодным соусом</p>
+                        <span class="price">280 ₽</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="menu.html" class="btn btn-outline">Смотреть всё меню</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Лавандовая ветвь</h4>
+                    <p>Уютная кофейня с атмосферой французского Прованса</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>+7 (4912) 123-45-67</p>
+                    <p>info@lavendercoffee.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Часы работы</h4>
+                    <p>Пн-Пт: 8:00-22:00</p>
+                    <p>Сб-Вс: 9:00-23:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Лавандовая ветвь. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ - Лавандовая ветвь</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🌿</span>
+                    <span class="logo-text">Лавандовая ветвь</span>
+                </a>
+                
+                <div class="menu-container">
+                    <button class="hamburger-menu" id="hamburgerMenu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    
+                    <div class="nav-overlay" id="navOverlay"></div>
+                    
+                    <div class="nav-menu" id="navMenu">
+                        <div class="nav-header">
+                            <span class="nav-title">Меню</span>
+                            <button class="nav-close" id="navClose">×</button>
+                        </div>
+                        
+                        <ul class="nav-links">
+                            <li><a href="index.html" class="nav-link">🏠 Главная</a></li>
+                            <li><a href="menu.html" class="nav-link">☕ Меню</a></li>
+                            <li><a href="gallery.html" class="nav-link">🖼️ Галерея</a></li>
+                            <li><a href="contacts.html" class="nav-link">📞 Контакты</a></li>
+                            <li><a href="registration.html" class="nav-link active">📝 Заказ</a></li>
+                            <li><a href="student.html" class="nav-link">👨‍🎓 Студент</a></li>
+                        </ul>
+                        
+                        <div class="nav-footer">
+                            <div class="contact-info-mobile">
+                                <p>📞 +7 (4912) 123-45-67</p>
+                                <p>🕒 Пн-Пт: 8:00-22:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="registration-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Оформление заказа</h1>
+                <p>Заполните форму для бронирования столика или доставки</p>
+            </div>
+
+            <div class="registration-form-container">
+                <form class="registration-form" id="orderForm">
+                    <div class="form-group">
+                        <label for="fullName">ФИО *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Телефон *</label>
+                        <input type="tel" id="phone" name="phone" required pattern="\+?[0-9\s\-\(\)]+">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="orderType">Тип заказа</label>
+                        <select id="orderType" name="orderType">
+                            <option value="delivery">Доставка</option>
+                            <option value="reservation">Бронирование столика</option>
+                            <option value="takeaway">Самовывоз</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="addressField">
+                        <label for="address">Адрес доставки *</label>
+                        <input type="text" id="address" name="address">
+                    </div>
+
+                    <div class="form-group" id="timeField">
+                        <label for="deliveryTime">Желаемое время *</label>
+                        <input type="time" id="deliveryTime" name="deliveryTime" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">Дополнительные пожелания</label>
+                        <textarea id="comments" name="comments" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-agreement">
+                        <input type="checkbox" id="agreement" name="agreement" required>
+                        <label for="agreement">Я согласен на обработку персональных данных</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Оформить заказ</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Лавандовая ветвь</h4>
+                    <p>Уютная кофейня с атмосферой французского Прованса</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>+7 (4912) 123-45-67</p>
+                    <p>info@lavendercoffee.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Часы работы</h4>
+                    <p>Пн-Пт: 8:00-22:00</p>
+                    <p>Сб-Вс: 9:00-23:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Лавандовая ветвь. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

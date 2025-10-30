@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню - Лавандовая ветвь</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🌿</span>
+                    <span class="logo-text">Лавандовая ветвь</span>
+                </a>
+                
+                <div class="menu-container">
+                    <button class="hamburger-menu" id="hamburgerMenu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    
+                    <div class="nav-overlay" id="navOverlay"></div>
+                    
+                    <div class="nav-menu" id="navMenu">
+                        <div class="nav-header">
+                            <span class="nav-title">Меню</span>
+                            <button class="nav-close" id="navClose">×</button>
+                        </div>
+                        
+                        <ul class="nav-links">
+                            <li><a href="index.html" class="nav-link">🏠 Главная</a></li>
+                            <li><a href="menu.html" class="nav-link active">☕ Меню</a></li>
+                            <li><a href="gallery.html" class="nav-link">🖼️ Галерея</a></li>
+                            <li><a href="contacts.html" class="nav-link">📞 Контакты</a></li>
+                            <li><a href="registration.html" class="nav-link">📝 Заказ</a></li>
+                            <li><a href="student.html" class="nav-link">👨‍🎓 Студент</a></li>
+                        </ul>
+                        
+                        <div class="nav-footer">
+                            <div class="contact-info-mobile">
+                                <p>📞 +7 (4912) 123-45-67</p>
+                                <p>🕒 Пн-Пт: 8:00-22:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="menu-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Наше меню</h1>
+                <p>Лавандовая ветвь - вкус и аромат Прованса</p>
+            </div>
+
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="coffee">Напитки</button>
+                <button class="category-btn" data-category="desserts">Десерты</button>
+                <button class="category-btn" data-category="tea">Чайная карта</button>
+            </div>
+
+            <div class="menu-section" id="coffee">
+                <h2>Кофейные напитки</h2>
+                <div class="menu-items-grid">
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <img src="images/lavender-raf.jpg" alt="Лавандовый раф" loading="lazy">
+                        </div>
+                        <div class="item-info">
+                            <h3>Лавандовый раф</h3>
+                            <p>Свежее молоко, эспрессо, лавандовый сироп, ваниль</p>
+                            <div class="item-meta">
+                                <span class="price">350 ₽</span>
+                                <span class="tag">Хит</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <img src="images/malin-latte.jpg" alt="Малиновый латте" loading="lazy">
+                        </div>
+                        <div class="item-info">
+                            <h3>Малиновый латте</h3>
+                            <p>Овсяное молоко, эспрессо, сироп малины, малиновая пудра</p>
+                            <div class="item-meta">
+                                <span class="price">320 ₽</span>
+                                <span class="tag seasonal">Сезонное</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <img src="images/bambl.jpg" alt="Апельсиновый бамбл" loading="lazy">
+                        </div>
+                        <div class="item-info">
+                            <h3>Апельсиновый бамбл</h3>
+                            <p>Эспрессо, лавандовая вода, цедра лимона</p>
+                            <div class="item-meta">
+                                <span class="price">340 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-section" id="desserts" style="display: none;">
+                <h2>Десерты</h2>
+                <div class="menu-items-grid">
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <img src="images/cheesecake.jpg" alt="Чизкейк с гранатом" loading="lazy">
+                        </div>
+                        <div class="item-info">
+                            <h3>Чизкейк с гранатом</h3>
+                            <p>Творожный сыр, гранат, ягодный соус</p>
+                            <div class="item-meta">
+                                <span class="price">280 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <img src="images/eklers.jpg" alt="Эклеры" loading="lazy">
+                        </div>
+                        <div class="item-info">
+                            <h3>Эклеры</h3>
+                            <p>Миндальная мука, заварной крем, белый шоколад</p>
+                            <div class="item-meta">
+                                <span class="price">250 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-section" id="tea" style="display: none;">
+                <h2>Чайная карта</h2>
+                <div class="menu-items-grid">
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <img src="images/tea.jpg" alt="Лавандовый чай" loading="lazy">
+                        </div>
+                        <div class="item-info">
+                            <h3>Лавандовый чай</h3>
+                            <p>Ароматный травяной чай с цветами лаванды, мятой и мелиссой</p>
+                            <div class="item-meta">
+                                <span class="price">280 ₽</span>
+                                <span class="tag">Успокаивающий</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Лавандовая ветвь</h4>
+                    <p>Уютная кофейня с атмосферой французского Прованса</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>+7 (4912) 123-45-67</p>
+                    <p>info@lavendercoffee.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Часы работы</h4>
+                    <p>Пн-Пт: 8:00-22:00</p>
+                    <p>Сб-Вс: 9:00-23:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Лавандовая ветвь. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

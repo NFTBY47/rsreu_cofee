@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - Лавандовая ветвь</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🌿</span>
+                    <span class="logo-text">Лавандовая ветвь</span>
+                </a>
+                
+                <div class="menu-container">
+                    <button class="hamburger-menu" id="hamburgerMenu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    
+                    <div class="nav-overlay" id="navOverlay"></div>
+                    
+                    <div class="nav-menu" id="navMenu">
+                        <div class="nav-header">
+                            <span class="nav-title">Меню</span>
+                            <button class="nav-close" id="navClose">×</button>
+                        </div>
+                        
+                        <ul class="nav-links">
+                            <li><a href="index.html" class="nav-link">🏠 Главная</a></li>
+                            <li><a href="menu.html" class="nav-link">☕ Меню</a></li>
+                            <li><a href="gallery.html" class="nav-link active">🖼️ Галерея</a></li>
+                            <li><a href="contacts.html" class="nav-link">📞 Контакты</a></li>
+                            <li><a href="registration.html" class="nav-link">📝 Заказ</a></li>
+                            <li><a href="student.html" class="nav-link">👨‍🎓 Студент</a></li>
+                        </ul>
+                        
+                        <div class="nav-footer">
+                            <div class="contact-info-mobile">
+                                <p>📞 +7 (4912) 123-45-67</p>
+                                <p>🕒 Пн-Пт: 8:00-22:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="gallery-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Наша галерея</h1>
+                <p>Погрузитесь в атмосферу уюта и прованского шарма</p>
+            </div>
+
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="interior">Интерьер</button>
+                <button class="filter-btn" data-filter="food">Блюда</button>
+                <button class="filter-btn" data-filter="events">Мероприятия</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Интерьер -->
+                <div class="gallery-item" data-category="interior">
+                    <div class="gallery-image">
+                        <img src="images/interior-main.jpg" alt="Уютный интерьер кофейни" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Главный зал</h3>
+                                <p>Уютная атмосфера с элементами прованского стиля</p>
+                            </div>
+                            <button class="gallery-zoom">🔍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="interior">
+                    <div class="gallery-image">
+                        <img src="images/gallery-interior-2.jpg" alt="Лавандовый уголок" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Лавандовый уголок</h3>
+                                <p>Место для уединенных бесед</p>
+                            </div>
+                            <button class="gallery-zoom">🔍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Блюда -->
+                <div class="gallery-item" data-category="food">
+                    <div class="gallery-image">
+                        <img src="images/lavender-raf.jpg" alt="Лавандовый раф" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Лавандовый раф</h3>
+                                <p>Наш фирменный напиток</p>
+                            </div>
+                            <button class="gallery-zoom">🔍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <div class="gallery-image">
+                        <img src="images/cheesecake.jpg" alt="Чизкейк с гранатом" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Чизкейк с гранатом</h3>
+                                <p>Нежный десерт с ягодным соусом</p>
+                            </div>
+                            <button class="gallery-zoom">🔍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Мероприятия -->
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-image">
+                        <img src="images/gallery-event-1.jpg" alt="Вечер поэзии" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Вечер поэзии</h3>
+                                <p>Творческие встречи в уютной атмосфере</p>
+                            </div>
+                            <button class="gallery-zoom">🔍</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-image">
+                        <img src="images/gallery-event-2.jpg" alt="Мастер-класс по латте-арту" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Мастер-класс</h3>
+                                <p>Учимся создавать латте-арт</p>
+                            </div>
+                            <button class="gallery-zoom">🔍</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal for image preview -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">×</button>
+            <img src="" alt="" id="modalImage">
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Лавандовая ветвь</h4>
+                    <p>Уютная кофейня с атмосферой французского Прованса</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>+7 (4912) 123-45-67</p>
+                    <p>info@lavendercoffee.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Часы работы</h4>
+                    <p>Пн-Пт: 8:00-22:00</p>
+                    <p>Сб-Вс: 9:00-23:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Лавандовая ветвь. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/gallery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
